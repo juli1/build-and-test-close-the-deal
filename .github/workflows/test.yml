@@ -30,7 +30,7 @@ jobs:
 
       - name: Run tests
         run: |
-          NODE_OPTIONS="-r dd-trace/ci/init" DD_ENV=ci DD_SERVICE=my-javascript-app npm test
+          NODE_OPTIONS="-r dd-trace/ci/init" DD_ENV=test-env-jdelange DD_SERVICE=close-the-deal npm test
         continue-on-error: true
         env:
           NODE_OPTIONS: -r dd-trace/ci/init
