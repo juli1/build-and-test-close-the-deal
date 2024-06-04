@@ -27,6 +27,7 @@ jobs:
       - name: Setup web app
         run: npm run serve-app &
 
+
       - name: Run tests
         run: |
           NODE_OPTIONS="-r dd-trace/ci/init" DD_ENV=ci DD_SERVICE=my-javascript-app npm test
